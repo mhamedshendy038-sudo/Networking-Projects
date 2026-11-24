@@ -21,11 +21,12 @@ The network is divided into three main layers:
 
 The network is divided into separate VLANs to organize devices and isolate traffic between departments.
 
-- VLAN 10 – Sales / Data 1: `192.168.10.0/24`
-- VLAN 20 – IT / Data 2: `192.168.20.0/24`
-- VLAN 30 – HR / Data 3: `192.168.30.0/24`
-- VLAN 40 – Voice Network: `192.168.40.0/24`
-
+- VLAN 10 – DEPT-A: `192.168.10.0/24`
+- VLAN 20 – DEPT-B: `192.168.20.0/24`
+- VLAN 30 – DEPT-C: `192.168.30.0/24`
+- VLAN 40 – DEPT-D: `192.168.40.0/24`
+- VLAN 50 – VOICE:  `192.168.50.0/24`
+- VLAN 60 – MGMT:   `192.168.60.0/24`
 ### 2. Inter-VLAN Routing
 
 Configured inter-VLAN communication using Switch Virtual Interfaces (SVIs) on the multilayer core switch. This allows devices in different VLANs to communicate with each other.
